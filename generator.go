@@ -124,10 +124,10 @@ func main() {
 			}
 		for _, name := range names{
 			name = strings.ReplaceAll(name, " ", "")
-			email := email_sub(name, format)
+			email := emailSub(name, format)
 			emailList = append(emailList, email)
-			if email_check(email, emailList) != 0 && duplicates {
-				email = email_mod(email, fmt.Sprint(email_check(email, emailList)))
+			if emailCheck(email, emailList) != 0 && duplicates {
+				email = emailMod(email, fmt.Sprint(emailCheck(email, emailList)))
 			}
 			_, writeErr = outFile.WriteString(email + "\n")
 			if writeErr != nil {
