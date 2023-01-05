@@ -19,7 +19,7 @@ func substr(input string, start int, length int) string {
     return string(asRunes[start : start+length])
 }
 //Checks email array if email already exists, returns how many times
-func email_check(email string, list []string) int {
+func emailCheck(email string, list []string) int {
 	count := -1
 	for _, e := range list {
 		if e == email {
@@ -28,7 +28,7 @@ func email_check(email string, list []string) int {
 	}
 	return count
 }
-func email_mod(email string, num string) (newemail string) {
+func emailMod(email string, num string) (newemail string) {
 	parts := strings.Split(email, "@")
 	local := parts[0]
 	domain := parts[1]
@@ -36,7 +36,7 @@ func email_mod(email string, num string) (newemail string) {
 	return
 }
 //Creates an email with given name and format
-func email_sub(name string, format string) (email string) {
+func emailSub(name string, format string) (email string) {
 	/*format list:
 	(f.) - first initial lowercase
 	(F.) - first initial uppercase
