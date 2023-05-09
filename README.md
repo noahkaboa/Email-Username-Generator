@@ -1,7 +1,7 @@
 # Email-Username-Generator
 Given a list of names and a list of formats to follow, program will generate a list of emails for each format that follows that given  
 i.e. `generator -f formats -n names -o output.txt` creates a file `output.txt` with the formats written to it
-##Options
+## Options
 * Use -n to set list of names provided, default is names.csv. __IMPORTANT: format of names must be last name, first name__
 * Use -o to set name of output file, default is emails.txt
 * Use -f to set name of formats file, default is format.txt. __IMPORTANT: see below for list of formatting options__
